@@ -2,18 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Rscripts.net</title>
-  <link rel="icon" href="https://rscripts.net/favicon.ico" type="image/x-icon">
+  <title>BUNNI Promo Panel</title>
   <style>
-    body { margin: 0; }
-    iframe {
-      width: 100vw;
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #FF6A00, #FFB347);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       height: 100vh;
-      border: none;
+      padding: 0 5%;
+      color: white;
     }
+
+    .left-text {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 3em;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .button-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      border: none;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 1.2em;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255,255,255,0.4);
+    }
+
+    .discord { background: linear-gradient(to right, #7289DA, #99AAB5); }
+    .new { background: linear-gradient(to right, #43B581, #57F287); }
+    .old { background: linear-gradient(to right, #FAA61A, #FEE75C); }
   </style>
 </head>
 <body>
-  <iframe src="https://rscripts.net/" title="rscripts.net"></iframe>
+  <div class="left-text">
+    BUNNI<br>UNDETECTED INTERNAL
+  </div>
+  <div class="button-panel">
+  <a href="https://discord.gg/bunnilol" class="btn discord" title="Join the community">Discord</a>
+  <a href="https://github.com/BloxCrypto/All-scripts/raw/refs/heads/main/bunni-installer.exe" class="btn new" title="Get the latest version">Download New</a>
+  <a href="https://github.com/BloxCrypto/All-scripts/raw/refs/heads/main/latestinstaller.zip" class="btn old" title="Legacy version archive">Download Old</a>
+</div>
+  </div>
 </body>
 </html>
